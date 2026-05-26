@@ -13,29 +13,31 @@
       
       
       
+        <link rel="prev" href="./..">
+      
       
       
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.43">
     
     
       
-        <title>Documentation</title>
+        <title>Sintaxe basica variaveis - Documentation</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="/assets/stylesheets/modern/main.fba56155.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.fba56155.min.css">
       
         
           
         
-        <link rel="stylesheet" href="/assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -54,7 +56,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -94,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="./.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
@@ -114,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Sintaxe basica variaveis
             
           </span>
         </div>
@@ -193,7 +195,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="./.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
@@ -211,7 +213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/" class="md-nav__link">
+      <a href="./.." class="md-nav__link">
         
   
   
@@ -234,10 +236,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/sintaxe-basica-variaveis/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -252,6 +261,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -300,8 +310,103 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  <h1 id="__skip">Sintaxe basica variaveis</h1>
+
+<p>Sintaxe Básica e Variáveis
+Neste módulo você aprenderá como Go organiza seu código, como declarar variáveis e quais são os tipos de dados disponíveis na linguagem.
+Pacotes
+Todo arquivo Go pertence a um pacote. O pacote main é o ponto de entrada de programas executáveis:
+package main
+Pacotes de biblioteca usam outros nomes:
+package utils</p>
+<p>Importações
+Use import para incluir pacotes:
+import "fmt"</p>
+<p>// Múltiplos pacotes
+import (
+    "fmt"
+    "math"
+    "strings"
+)</p>
+<p>Variáveis
+Declaração com var
+var nome string = "Go"
+var versao int = 1
+var ativo bool = true
+Declaração curta com :=
+Dentro de funções, você pode usar a forma curta:
+nome := "Go"
+versao := 1
+ativo := true
+Múltiplas variáveis
+var (
+    linguagem string = "Go"
+    ano       int    = 2009
+    opensource bool  = true
+)</p>
+<p>Tipos de dados
+Tipo    Descrição   Exemplo
+int Inteiro 42
+float64 Ponto flutuante 3.14
+string  Texto   "Olá"
+bool    Booleano    true / false
+byte    Alias para uint8    'A'
+rune    Alias para int32 (caractere Unicode)    'á'</p>
+<p>Constantes
+Constantes são declaradas com const e não podem ser alteradas:
+const Pi = 3.14159
+const Linguagem = "Go"</p>
+<p>Valor zero
+Em Go, toda variável declarada sem valor inicial recebe o valor zero do seu tipo:
+var numero int    // 0
+var texto string  // ""
+var ativo bool    // false</p>
+<p>Conversão de tipos
+Go não faz conversão implícita. É necessário converter explicitamente:
+var x int = 10
+var y float64 = float64(x)
+var z int = int(y)</p>
+<p>Funções básicas do pacote fmt
+fmt.Println("Texto com quebra de linha")
+fmt.Print("Texto sem quebra de linha")
+fmt.Printf("Nome: %s, Idade: %d\n", "Go", 15)
+Principais verbos de formatação:
+    • %s — string
+    • %d — inteiro
+    • %f — float
+    • %v — valor genérico
+    • %T — tipo da variável</p>
+<p>Exemplo completo
+package main</p>
+<p>import "fmt"</p>
+<p>func main() {
+    linguagem := "Go"
+    ano := 2009
+    var estavel bool = true</p>
+<div class="language-text highlight"><pre><span></span><code>fmt.Printf(&quot;Linguagem: %s\n&quot;, linguagem)
+fmt.Printf(&quot;Criada em: %d\n&quot;, ano)
+fmt.Printf(&quot;Estável: %v\n&quot;, estavel)
+</code></pre></div>
+<p>}</p>
+<p>Próximos passos
+Continue para Estruturas de Controle, onde você aprenderá if, for e switch em Go.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -321,6 +426,28 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="./.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Documentação da Linguagem Go">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Documentação da Linguagem Go
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -353,10 +480,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"/","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"/assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="/assets/javascripts/bundle.6e5f0216.min.js"></script>
+      <script src="../assets/javascripts/bundle.6e5f0216.min.js"></script>
       
     
   </body>
